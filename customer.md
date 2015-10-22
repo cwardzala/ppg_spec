@@ -17,7 +17,7 @@ This section shows how developers can make use of the features of this specifica
     },
     "email": "jdoe@findaway.com",
     "is_approved": true,
-    "org_id": 1234,
+    "org_id": "01fc7fce-bf78-4b50-903a-fb3b760f5b30",
     "ils_enabled": false,
     "default_package_type": {
         "bookpacks": "portfolio"
@@ -25,7 +25,7 @@ This section shows how developers can make use of the features of this specifica
 }
 ```
 
-## 2 Manifest and its members
+## 2 Customer and its members
 
 ### 2.1 `id` member
 The `id` member is a __String__ [Universally unique identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier) (UUID). Meant to represent a canonical ID for the customer.
@@ -56,4 +56,3 @@ The `ils_enabled` member is a __Boolean__ that identifies if the customer has IL
 
 ### 2.5 `default_bp_pkg` member
 The `default_package_type` is an __Object__ that identifies the default package type for zero or more product types.
-
