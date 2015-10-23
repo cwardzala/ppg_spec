@@ -33,7 +33,6 @@ This section shows how developers can make use of the features of this specifica
     "release_date": "2008-10-01",
     "series": "Hunger Games Trilogy",
     "price" : 74.99,
-    "studio": null,
     "release_types": [],
     "awards": [],
     "is_available": true,
@@ -67,7 +66,7 @@ _Note: should this be Markdown? HTML? Plain Text?_
 The `slug` member is a __String__ that represents a unique URL path for the Product. The slug should be created using the `title` member. All characters should be lowercase and all non word characters be converted to hyphen.
 
 ### 2.7 `isbn` member
-The `isbn` member is an __Integer__ that represents the Product's ISBN number. If the Product does not have an ISBN this value should be __NULL__.
+The `isbn` member is an __Integer__ that represents the Product's ISBN number. If the Product does not have an ISBN this value should be __null__.
 
 ### 2.8 `sku` member
 The `sku` member is a __String__ that represents the unique Product SKU. Because not all product types use numeric SKUs this is a string to create consistency.
@@ -83,4 +82,25 @@ The `audience` member is a __String__ that represents the "human readable" name 
 The `age_level` member is an __Array__ that contains one or more values. The values in the array represent the low and high values of the level range. The value at index 0 is the lowest, and value at index 1 is the highest. If only one value is provided the high value is infinity.
 
 ### 2.11 `grade_level` member
-The `grade_level` member is an __Array__ that contains one or more values. The values in the array represent the low and high values of the level range. The value at index 0 is the lowest, and value at index 1 is the highest. If only one value is provided the high value is infinity.
+The `grade_level` member is an __Array__ that contains one or more __Integer__ values. The values in the array represent the low and high values of the level range. The value at index 0 is the lowest, and value at index 1 is the highest. If only one value is provided the high value is infinity.
+
+### 2.12 `genre` member
+The `genre` member is an __Array__ that contains one or more __String__ values. The values represent the name of a genre.
+_Note: should this link to a Genre record?_
+
+### 2.13 `abridgement` member
+The `abridgement` member is a __String__ that represents the abridgement type of the Product.
+
+### 2.14 `duration` member
+The `duration` member is a __String__ that represents the total playing time of the Product in "hh:mm:ss" format.
+
+### 2.15 `release_date` member
+The `release_date` member is a __String__ that represents the ISO 8601 formatted date of release for the Product.
+
+### 2.16 `series` member
+The `series` member is a __String__ that represents the title of the series the Product belongs to. If the Product does not belong to a series this value should be __null__.
+
+### 2.17 `price` member
+The `price` member is a __Float__ that represents the base price of the Product. The value should never exceed the Hundredths decimal place. This value should not include any discounts for subscription or contract.
+
+### 2.18 `release_types`
