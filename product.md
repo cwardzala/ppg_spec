@@ -10,7 +10,8 @@ This section shows how developers can make use of the features of this specifica
 ```json
 {
     "id": "cf230493-3c8c-459b-a99b-30b137b350cd",
-    "title": "The Hunger Games",
+    "title": "Hunger Games, the",
+    "original_title": "The Hunger Games",
     "author": [
         "Suzanne Collins"
     ],
@@ -24,16 +25,20 @@ This section shows how developers can make use of the features of this specifica
     "publisher": [
         "Scholastic"
     ],
-    "age_level": "Young Adult",
-    "genre": "Young Adult",
+    "audience": "Young Adult",
+    "age_level": [18,35],
+    "grade_level": [6,12],
+    "genre": ["Fiction", "Young Adult", "Science Fiction"],
     "abridgment": "Unabridged",
     "duration": "11:10:57",
     "release_date": "2008-10-01",
     "series": "Hunger Games Trilogy",
     "price" : 74.99,
     "studio": null,
+    "release_types": [],
+    "awards": [],
     "is_available": true,
-    "product_type": "playaway",
+    "format": "playaway",
     "package_type": null,
     "package_size": null
 }
