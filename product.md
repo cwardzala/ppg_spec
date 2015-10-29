@@ -33,7 +33,7 @@ This section shows how developers can make use of the features of this specifica
     "release_date": "2008-10-01",
     "series": "Hunger Games Trilogy",
     "price" : 74.99,
-    "release_types": [],
+    "release_type": "Simultaneous Release with Audio",
     "awards": [],
     "is_available": true,
     "format": "playaway",
@@ -103,4 +103,38 @@ The `series` member is a __String__ that represents the title of the series the 
 ### 2.17 `price` member
 The `price` member is a __Float__ that represents the base price of the Product. The value should never exceed the Hundredths decimal place. This value should not include any discounts for subscription or contract.
 
-### 2.18 `release_types`
+### 2.18 `release_type` member
+The `release_type` member is a __String__ that represents the Product's special release type. If the Product does not have a release type, the value should be __null__.
+
+Possible non-null values:
+
+- Simultaneous Release with Audio
+- Simultaneous Release with Print
+- Recent Release
+- Backlist
+- New Release
+- Simultaneous Release
+- Simultaneous Release with Re-Issue
+
+### 2.19 `awards` member
+The `awards` member is an __Array__ that contains zero or more __String__ values that represent the award name.
+
+### 2.20 `is_available` member
+The `is_available` member is a __Boolean__ that represents if the Product is available for order. This could be related to release date, or inventory. Since we do not track actual inventory, this is the only way to restrict a product's purchase after release.
+
+### 2.21 `package_type` member
+The `package_type` member is a __String__ that represents the Product's package type. Since each package type for as title is tracked as a separate SKU this is a human readable value for the package type. If the product does not have a specific package type, the value should be __null__ which equates to standard.
+
+Possible non-null values:
+
+- portfolio_case
+- folding_case
+- hanging_bag
+
+### 2.22 `package_size` member
+The `package_size` member is a __String__ that represents the Product's package size. If the Product does not have a package size, the value should be __null__.
+
+Possible non-null values:
+
+- large
+- small
