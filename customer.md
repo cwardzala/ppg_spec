@@ -20,7 +20,7 @@ This section shows how developers can make use of the features of this specifica
     "org_id": "01fc7fce-bf78-4b50-903a-fb3b760f5b30",
     "ils_enabled": false,
     "default_package_type": {
-        "bookpacks": "portfolio"
+        "bookpacks": "portfolio_case"
     }
 }
 ```
