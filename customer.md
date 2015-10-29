@@ -54,5 +54,5 @@ The `org_id` member is a __String__ that represents the `id` of an associated `O
 ### 2.4 `ils_enabled` member
 The `ils_enabled` member is a __Boolean__ that identifies if the customer has ILS grid ordering enabled.
 
-### 2.5 `default_bp_pkg` member
-The `default_package_type` is an __Object__ that identifies the default package type for zero or more product types.
+### 2.5 `default_package_type` member
+The `default_package_type` is an __Object__ that identifies the default package type for zero or more [Product](product.md) types.
