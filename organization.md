@@ -14,7 +14,16 @@ This section shows how developers can make use of the features of this specifica
         "long": "Cuyahoga County Public Library",
         "short": "CCPL"
     },
-    "ils_enabled": false
+    "currency": "USD",
+    "ils_enabled": false,
+    "price_contracts": {
+        "playaway_light": 0.25,
+        "playaway_view": 0.05,
+        "playaway_bookpacks": 0.05,
+        "accessory": 0.25,
+        "service": 0.25,
+        "recorded_books": 0.05
+    }
 }
 ```
 
@@ -34,3 +43,6 @@ The `long` member represents the short or abbreviated name of the Organization. 
 
 ### 2.3 `ils_enabled` member
 The `ils_enabled` member is a __Boolean__ that identifies if the Organization has ILS grid ordering enabled. If this value is _false_ then it overrides any `ils_enabled` value for the [Customer](customer.md).
+
+### 2.3 `price_contracts` member
+The `price_contracts` member is an __Object__ of _key:value_ pairs that identify the price contract discounts for zero or more product types. Each _key_ is a product type `format` member value, and its _value_ is the discount amount as a decimal __Float__.

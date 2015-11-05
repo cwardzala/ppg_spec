@@ -36,7 +36,7 @@ This section shows how developers can make use of the features of this specifica
     "release_type": "Simultaneous Release with Audio",
     "awards": [],
     "is_available": true,
-    "format": "playaway",
+    "format": "playaway_light",
     "package_type": null,
     "package_size": null
 }
@@ -121,6 +121,18 @@ The `awards` member is an __Array__ that contains zero or more __String__ values
 
 ### 2.20 `is_available` member
 The `is_available` member is a __Boolean__ that represents if the Product is available for order. This could be related to release date, or inventory. Since we do not track actual inventory, this is the only way to restrict a product's purchase after release.
+
+### 2.21 `format` member
+The `format` member is a __String__ that represents the format the Product is available in. This can also loosely be referred to as "product type".
+
+Possible non-null values:
+
+- playaway_light
+- playaway_view
+- playaway_launchpad
+- playaway_bookpacks
+- service
+- accessory
 
 ### 2.21 `package_type` member
 The `package_type` member is a __String__ that represents the Product's package type. Since each package type for as title is tracked as a separate SKU this is a human readable value for the package type. If the product does not have a specific package type, the value should be __null__ which equates to standard.
