@@ -41,8 +41,11 @@ The `long` member represents the full name of the Organization.
 #### 2.2.2 `short` member
 The `long` member represents the short or abbreviated name of the Organization. This is provided for use when the full (long) name is not appropriate.
 
-### 2.3 `ils_enabled` member
+### 2.3 `currency` member
+The `currency` member is a __String__ that represents the [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) alphabetic code for the Organization's default currency.
+
+### 2.4 `ils_enabled` member
 The `ils_enabled` member is a __Boolean__ that identifies if the Organization has ILS grid ordering enabled. If this value is _false_ then it overrides any `ils_enabled` value for the [Customer](customer.md).
 
-### 2.3 `price_contracts` member
-The `price_contracts` member is an __Object__ of _key:value_ pairs that identify the price contract discounts for zero or more product types. Each _key_ is a product type `format` member value, and its _value_ is the discount amount as a decimal __Float__.
+### 2.5 `price_contracts` member
+The `price_contracts` member is an __Object__ of _key:value_ pairs that identify the price contract discounts for zero or more product types. Each _key_ is a [Product](product.md) `format` member value, and its _value_ is the discount amount as a decimal __Float__.
