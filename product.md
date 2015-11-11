@@ -133,6 +133,7 @@ Possible non-null values:
 - playaway_bookpacks
 - service
 - accessory
+- recorded_books
 
 ### 2.21 `package_type` member
 The `package_type` member is a __String__ that represents the Product's package type. Since each package type for as title is tracked as a separate SKU this is a human readable value for the package type. If the product does not have a specific package type, the value should be __null__ which equates to standard.
