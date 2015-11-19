@@ -42,7 +42,7 @@ The `long` member represents the full name of the Organization.
 The `long` member represents the short or abbreviated name of the Organization. This is provided for use when the full (long) name is not appropriate.
 
 ### 2.3 `currency` member
-The `currency` member is a __String__ that represents the [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) alphabetic code for the Organization's default currency.
+The `currency` member is a __String__ that represents the Organization's default currency as [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) alphabetic code.
 
 ### 2.4 `ils_enabled` member
 The `ils_enabled` member is a __Boolean__ that identifies if the Organization has ILS grid ordering enabled. If this value is _false_ then it overrides any `ils_enabled` value for the [Customer](customer.md).
